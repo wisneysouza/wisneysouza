@@ -3,19 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário</title>
+    <title>Formulário T3</title>
   </head>
 
   <body>
     <header>
       <h1>Cadastre-se</h1>
-      <h2>Comprre ingressos</h2>
+      <h2>Comprre ingressos e combos de pipoca com conforto e comodidade.</h2>
     </header>
     <main>
       <form action="">
         <fieldset>
-          <div>
             <legend>Preencha os campos</legend>
+
+            <div>
             <label for="Nome"> Nome: </label>
             <input
               type="text"
@@ -34,9 +35,15 @@
               placeholder="Digite seu E-mail"
             />
           </div>
+
           <div>
-            <label for="Senha">Senha</label>
-            <input type="password" nome="senha" id="senha" />
+            <label for="Senha">Senha:</label>
+            <input 
+            type="password" 
+            nome="senha" 
+            id="senha"
+            placeholder="Digite sua senha" 
+            />
           </div>
         </fieldset>
 
@@ -49,19 +56,44 @@
             <option value="ES">ES</option>
           </select>
 
-          <label for="nascimento">Data de Nascimento </label>
-          <input type="date" nome="Nascimentos" id="nascimento" />
+          <label for="nascimento">Data de Nascimento:</label>
+          <input type="date" name="Nascimentos" id="nascimento" />
 
           <label for="foto">Selecione uma foto </label>
-          <input type="file" name="foto" id="foto" accept="image/png" />
+          <input 
+          type="file" 
+          name="foto" 
+          id="foto" 
+          accept="image/png, image/jpeg, doc/pdf" 
+          />
         </fieldset>
+
         <fieldset>
-          <legend></legend>
+          <legend>Voce é um robô?</legend>
+
           <img
             src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png"
             width="100"
-            alt="Figura de um robô vede"/>
+            alt="Figura de um robô vede"
+            />
+            <div>
+                <input type="radio" name="robo" id="sim"/>
+                <label for="sim">Sim, sou um robô</label>
+
+                <input type="radio" name="robo" id="não">
+                <label for="não">Não sou um robô</label>
+
+                <input type="radio" name="robo" id="talvez"/>
+                <label for="talvez">Talvez eu seja um robô</label>
+            </div>
+
+            <input type="checkbox" name="acordo" id="acordo"/>
+            <label for="acordo">Declaro que sou um robô e vim pedir educação no chatGPT</label>
         </fieldset>
+
+        <input type="submit" value="Enviar"/>
+        
+        <button type="submit"> Enviar </button>
       </form>
     </main>
   </body>
