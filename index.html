@@ -1,38 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Cadastre-se</h1>
-        <h2>Comprre ingressos</h2>
+      <h1>Cadastre-se</h1>
+      <h2>Comprre ingressos</h2>
     </header>
     <main>
-        <form action="">
-            <fieldset>
-                <div>
+      <form action="">
+        <fieldset>
+          <div>
+            <legend>Preencha os campos</legend>
+            <label for="Nome"> Nome: </label>
+            <input
+              type="text"
+              name="Nome"
+              id="Nome"
+              placeholder="Digite seu nome"
+            />
+          </div>
 
-                    <legend> Preencha os campos </legend>
-                    <label for="Nome"> Nome: </label>
-                    <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome" />
-                </div>
+          <div>
+            <label for="e-mail"> Email </label>
+            <input
+              type="email"
+              e-mail="email"
+              id="e-mail"
+              placeholder="Digite seu E-mail"
+            />
+          </div>
+          <div>
+            <label for="Senha">Senha</label>
+            <input type="password" nome="senha" id="senha" />
+          </div>
+        </fieldset>
 
-                <div>
-                    <label for="e-mail"> Email </label>
-                    <input type="email" e-mail="email" id="e-mail" placeholder="Digite seu E-mail" />
-                </div>
+        <fieldset>
+          <label for="Estados">Estados </label>
+          <select name="estados" id="estados">
+            <option value="SE">SE</option>
+            <option value="PB">PB</option>
+            <option value="AC">AC</option>
+            <option value="ES">ES</option>
+          </select>
 
+          <label for="nascimento">Data de Nascimento </label>
+          <input type="date" nome="Nascimentos" id="nascimento" />
 
-
-            </fieldset>
-        </form>
+          <label for="foto">Selecione uma foto </label>
+          <input type="file" name="foto" id="foto" accept="image/png" />
+        </fieldset>
+        <fieldset>
+          <legend></legend>
+          <img
+            src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png"
+            width="100"
+            alt="Figura de um robô vede"/>
+        </fieldset>
+      </form>
     </main>
-
-</body>
-
+  </body>
 </html>
